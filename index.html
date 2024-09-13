@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/variables.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/reponsive.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="./assets/font/fontawesome-6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="theme-dark">
+    <div id="main">
+      <!-- HEADER -->
+      <header>
+        <div class="header__content container">
+          <div class="header__logo">
+            <img src="./assets/imgs/FPT_logo_2010.svg.png" alt="LOGO" />
+            <div class="text">
+              <p>FPT Group</p>
+              <p>Vision to your Future</p>
+            </div>
+          </div>
+          <div class="header__menu">
+            <ul>
+              <li class="menu-active"><a href="#">Trang chủ</a></li>
+              <li><a href="#">Hệ sinh thái FPT</a></li>
+              <li><a href="#">Nhà đầu tư</a></li>
+              <li><a href="#">Tin tức</a></li>
+              <li><a href="#">Cơ hội nghề nghiệp</a></li>
+            </ul>
+          </div>
+          <div id="theme__icon" onclick="changeIcon()"></div>
+        </div>
+      </header>
+      <!-- SLIDE -->
+      <div class="slider">
+        <div class="slide-overlay"></div>
+        <div class="list-slide">
+          <div class="slide-item">
+            <img src="./assets/imgs/slide1.jpg" alt="" />
+            <div class="slide-text"></div>
+          </div>
+          <div class="slide-item">
+            <img src="./assets/imgs/slide2.jpg" alt="" />
+            <div class="slide-text"></div>
+          </div>
+          <div class="slide-item">
+            <img src="./assets/imgs/slide3.jpg" alt="" />
+            <div class="slide-text"></div>
+          </div>
+        </div>
+        <div class="btn-slide">
+          <button id="prev" onclick="prevSlide()">&#10094;</button>
+          <button id="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+      </div>
+      <!-- ABOUT -->
+      <div class="about-us">
+        <div class="container">
+          <div class="about__content fade-in">
+            <div class="about__component">
+              <div class="about__left">
+                <img src="./assets/imgs/logo-fpt.png" alt="" />
+                <div class="text">
+                  <h6 class="title-big">
+                    Tập đoàn công nghệ hàng đầu Việt Nam
+                  </h6>
+                  <p class="text-content">
+                    Tiên phong trong xu hướng công nghệ mới
+                  </p>
+                  <p class="text-content">
+                    Khẳng định vị thế Việt Nam trên toàn cầu
+                  </p>
+                </div>
+              </div>
+              <div class="about__right">
+                <div class="item">
+                  <h3>35+ năm</h3>
+                  <p>Kinh nghiệm</p>
+                </div>
+                <div class="item">
+                  <h3>29</h3>
+                  <p>Quốc gia</p>
+                </div>
+                <div class="item">
+                  <h3>44.010 tỷ VNĐ</h3>
+                  <p>Doanh thu năm 2022</p>
+                </div>
+                <div class="item">
+                  <h3>+42.408</h3>
+                  <p>Nhân viên</p>
+                </div>
+              </div>
+            </div>
+            <div class="about__value">
+              <div class="text">
+                <p class="title-big">Giá trị cốt lõi</p>
+                <p class="text-content">
+                  "Tôn, Đổi, Đồng - Chí, Gương, Sáng" được xem là một phần không
+                  thể thiếu kiến tạo nên bộ GEN của FPT, là Tinh thần FPT, là
+                  sức mạnh thúc đẩy lãnh đạo, CBNV của Tập đoàn không ngừng nỗ
+                  lực, sáng tạo vì lợi ích chung của cộng đồng, khách hàng, cổ
+                  đông và các bên liên quan khác.
+                </p>
+                <ul>
+                  <li><span>&#10004;</span>Tôn trọng</li>
+                  <li><span>&#10004;</span>Chí công</li>
+                  <li><span>&#10004;</span>Đổi mới</li>
+                  <li><span>&#10004;</span>Gương mẫu</li>
+                  <li><span>&#10004;</span>Đồng đội</li>
+                  <li><span>&#10004;</span>Sáng suốt</li>
+                </ul>
+              </div>
+              <div>
+                <img src="./assets/imgs/toa nha fpt 3.webp" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ECOSYSTEM -->
+      <div class="ecosystem">
+        <div class="container">
+          <div class="ecosystem__content fade-in">
+            <div class="ecosystem__text">
+              <h3 class="title-big">
+                Tiên phong trong các xu hướng công nghệ mới
+              </h3>
+              <p class="text-content">
+                FPT luôn khẳng định vị thế tiên phong trong các lĩnh vực Công
+                nghệ, Viễn thông và Giáo dục. Đón đầu xu hướng công nghệ, thị
+                trường, FPT tạo dựng Hệ sinh thái những dịch vụ, sản phẩm, giải
+                pháp, nền tảng Made by FPT thúc đẩy sự phát triển, tăng trưởng
+                bền vững của các tổ chức, doanh nghiệp cũng như mang đến những
+                trải nghiệm mới, khác biệt cho người dùng.
+              </p>
+              <div>
+                <button class="btn">Khám phá thêm</button>
+              </div>
+            </div>
+            <div class="ecosystem__list">
+              <div class="item">
+                <img src="./assets/imgs/cong_nghe.png" alt="" />
+                <p>Công nghệ</p>
+              </div>
+              <div class="item">
+                <img src="./assets/imgs/vien_thong.png" alt="" />
+                <p>Viễn thông</p>
+              </div>
+              <div class="item">
+                <img src="./assets/imgs/giaoduc.png" alt="" />
+                <p>Giáo dục</p>
+              </div>
+              <div class="item">
+                <img src="./assets/imgs/logo-fpt.png" alt="" />
+                <p>Công ty</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MISSION -->
+      <div class="mission">
+        <div class="container fade-in">
+          <div class="mission-left">
+            <img src="./assets/imgs/FPTFFF7EF2x.webp" alt="" />
+          </div>
+          <div class="mission-right">
+            <h3 class="title-big">Made by FPT</h3>
+            <p class="text-content">
+              Dựa trên những công nghệ mới nhất, hệ sinh thái Made by FPT giúp
+              doanh nghiệp, tổ chức trong mọi lĩnh vực đẩy nhanh quá trình
+              chuyển đổi số, gia tăng năng suất, tiết kiệm chi phí, tận dụng tối
+              đa nguồn lực để vượt qua các thách thức.
+            </p>
+            <div class="link-vd">
+              <a id="open-video">Xem video <i class="fa-solid fa-play"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SERVICE -->
+      <div class="services">
+        <div class="container">
+          <h3 class="title-big">
+            Luôn sẵn sàng chăm sóc bạn, Dịch vụ của chúng tôi
+          </h3>
+          <div class="services__content fade-in">
+            <div class="item">
+              <div class="img">
+                <img src="./assets/imgs/baohanh.jpg" alt="" />
+                <div class="service-note">
+                  <a href="#">Bảo hành sản phẩm</a>
+                </div>
+              </div>
+              <p class="text-content">
+                F.Studio by FPT bảo dưỡng sản phẩm Apple miễn phí
+              </p>
+              <a href="">Tìm hiểu thêm</a>
+            </div>
+            <div class="item">
+              <div class="img">
+                <img src="./assets/imgs/phattrienphanmem.jpg" alt="" />
+                <div class="service-note">
+                  <a href="#">Phát triển phần mềm</a>
+                </div>
+              </div>
+              <p class="text-content">
+                FPT Software phát triển phần mềm cho hàng triệu thiết bị trên ô
+                tô, xe máy
+              </p>
+              <a href="">Tìm hiểu thêm</a>
+            </div>
+            <div class="item">
+              <div class="img">
+                <img src="./assets/imgs/phattriensanpham.png" alt="" />
+                <div class="service-note">
+                  <a href="#">Phát triển sản phẩm</a>
+                </div>
+              </div>
+              <p class="text-content">
+                FPT phát triển sản phẩm Make in Viet Nam thúc đẩy kinh tế số
+              </p>
+              <a href="">Tìm hiểu thêm</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- PRODUCTS -->
+      <div class="products ">
+        <div class="container">
+          <div class="products__content">
+            <div class="title">
+              <p>THƯ VIỆN CỦA CHÚNG TÔI</p>
+              <h3 class="title-big">
+                Những dự án thành công chúng tôi đã thực hiện
+              </h3>
+            </div>
+            <div class="products__list fade-in">
+              <div class="product__item">
+                <a class="img">
+                  <img src="./assets/imgs/product1.jpg" alt="" />
+                </a>
+                <div class="product__overlay">
+                  <div class="text">
+                    <h4>Sản phẩm 1</h4>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <a class="img">
+                  <img src="./assets/imgs/product2.jpg" alt="" />
+                </a>
+                <div class="product__overlay">
+                  <div class="text">
+                    <h4>Sản phẩm 2</h4>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <a class="img">
+                  <img src="./assets/imgs/product3.jpg" alt="" />
+                </a>
+                <div class="product__overlay">
+                  <div class="text">
+                    <h4>Sản phẩm 3</h4>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <a class="img">
+                  <img src="./assets/imgs/product4.jpg" alt="" />
+                </a>
+                <div class="product__overlay">
+                  <div class="text">
+                    <h4>Sản phẩm 4</h4>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <a class="img">
+                  <img src="./assets/imgs/product5.jpg" alt="" />
+                </a>
+                <div class="product__overlay">
+                  <div class="text">
+                    <h4>Sản phẩm 5</h4>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <a class="img">
+                  <img src="./assets/imgs/product6.jpg" alt="" />
+                </a>
+                <div class="product__overlay">
+                  <div class="text">
+                    <h4>Sản phẩm 6</h4>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <footer>
+        <div class="email fade-in">
+          <div class="container">
+            <div class="email__content">
+              <div class="email__title title-big">
+                <h4>Đăng ký và cập nhật</h4>
+              </div>
+              <div class="email__form">
+                <div class="email__plane">
+                  <img src="./assets/imgs/paper-plane.png" alt="" />
+                </div>
+                <div class="email__input">
+                  <input
+                    id="updateemail"
+                    type="email"
+                    name="email"
+                    placeholder="Email của bạn"
+                    required
+                  />
+                </div>
+                <div class="email__login">
+                  <button id="update">Cập nhật</button>
+                  <button onclick="showFormLogin()">Đăng kí</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="location">
+              <div class="map">
+                <a href="" id="myLocation" target="_blank">Xem vị trí của bạn</a>
+              </div>
+              <div class="coordinates">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__content container fade-in">
+          <div class="col__logo">
+            <div class="footer__logo">
+              <img src="./assets/imgs/FPT_logo_2010.svg.png" alt="LOGO" />
+              <div>
+                <p>FPT Group</p>
+                <p>Vision to your Future</p>
+              </div>
+            </div>
+            <div class="footer__logo__text">
+              <p>
+                FPT tiếp tục theo đuổi mục tiêu lớn dài hạn là trở thành doanh
+                nghiệp số và đứng trong Top 50 công ty hàng đầu thế giới về cung
+                cấp dịch vụ, giải pháp chuyển đổi số toàn diện vào năm 2030.
+              </p>
+            </div>
+            <div class="footer__logo__icon">
+              <img src="./assets/imgs/Facebook.webp" alt="" />
+              <img src="./assets/imgs/Linkedin.webp" alt="" />
+              <img src="./assets/imgs/Youtube.webp" alt="" />
+            </div>
+          </div>
+          <div class="col__about">
+            <h3>Về FPT</h3>
+            <ul>
+              <li><a href="#">Thông điệp Chủ tịch HĐQT</a></li>
+              <li><a href="#">Giá trị cốt lõi</a></li>
+              <li><a href="#">Lịch sử</a></li>
+              <li><a href="#">Tầm nhìn chiến lược</a></li>
+              <li><a href="#">Mạng lưới hoạt động</a></li>
+              <li><a href="#">Đội ngũ lãnh đạo</a></li>
+              <li><a href="#">Trách nhiệm xã hội</a></li>
+              <li><a href="#">Giải thưởng</a></li>
+              <li><a href="#">Đối tác và khách hàng</a></li>
+            </ul>
+          </div>
+          <div class="col__ecosystem">
+            <h3>Hệ sinh thái FPT</h3>
+            <ul>
+              <li><a href="#">Công nghệ</a></li>
+              <li><a href="#">Viễn thông</a></li>
+              <li><a href="#">Giáo dục</a></li>
+              <li><a href="#">Công ty thành viên</a></li>
+            </ul>
+          </div>
+          <div class="col__investors">
+            <h3>Nhà đầu tư</h3>
+            <ul>
+              <li><a href="#">Đại hội đồng cổ đông</a></li>
+              <li><a href="#">Công bố thông tin</a></li>
+              <li><a href="#">Báo cáo</a></li>
+              <li><a href="#">Thông tin cổ phiếu</a></li>
+              <li><a href="#">Quản trị công ty</a></li>
+            </ul>
+          </div>
+          <div class="col__news">
+            <h3>Tin tức</h3>
+            <ul>
+              <li><a href="#">Tin FPT</a></li>
+              <li><a href="#">Thông cáo báo chí</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copy__right">
+          <p>Copyright © FPT</p>
+          <img src="./assets/imgs/DMCA_Badge.webp" alt="" />
+        </div>
+      </footer>
+      <!-- BACKTOTOP -->
+      <div class="backtotop">
+        <p>&#10094;</p>
+      </div>
+    </div>
+    <!-- Form Login -->
+    <div id="form">
+      <form>
+        <div class="title">
+          <h3>Đăng kí</h3>
+        </div>
+        <div class="content">
+          <div class="accout">
+            <div>
+              <div class="inp">
+                <input type="text" name="" id="name" />
+  
+                <label for="name"
+                  ><i class="fa-solid fa-user"></i> Full name</label
+                >
+              </div>
+              <p class="error" id="errorUserName"></p>
+            </div>
+            <div>
+              <div class="inp">
+                <input type="text" name="" id="numberPhone" />
+  
+                <label for="numberPhone"
+                  ><i class="fa-solid fa-phone"></i> Phone number</label
+                >
+              </div>
+              <p class="error" id="errorPhone"></p>
+            </div>
+            <div>
+              <div class="inp">
+                <input type="email" name="" id="email" />
+                <label for="name"
+                  ><i class="fa-solid fa-envelope"></i> Email</label
+                >
+              </div>
+              <p class="error" id="errorEmail"></p>
+            </div>
+
+          </div>
+          <div class="form-btn">
+            <div>
+              <button class="btn" onclick="login(event)">Đăng kí</button>
+              <button class="btn close" onclick="hiddenFormLogin()">Đóng</button>
+            </div>
+
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- video modal -->
+    <div class="vd-modal">
+      <div class="container">
+        <div class="video">
+          <input type="range" min="0" max="100" value="0" id="seekBar" />
+          <video id="video">
+            <source
+              src="./assets/videos/Chính Thức Ra Mắt Bộ Giải Mã FPT Play 2022.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="controls">
+          <div class="left">
+            <button onclick="forWard()">
+              <i class="fa-solid fa-backward-step"></i>
+            </button>
+            <button class="play" onclick="PlayPause()">
+              <i id="icon" class="fa-solid fa-pause"></i>
+            </button>
+            <button onclick="backWard()">
+              <i class="fa-solid fa-forward-step"></i>
+            </button>
+          </div>
+          <input
+            type="range"
+            min="0"
+            max="1"
+            step="0.1"
+            value="1"
+            id="volumeRange"
+          />
+          <div class="right">
+            <button onclick="soundOff()">
+              <i class="fa-solid fa-volume-xmark"></i>
+            </button>
+            <button onclick="reduceVolume()">
+              <i class="fa-solid fa-volume-off"></i><span>-</span>
+            </button>
+            <button onclick="increaseVolume()">
+              <i class="fa-solid fa-volume-off"></i><span>+</span>
+            </button>
+            <button onclick="reload()">
+              <i class="fa-solid fa-rotate-left"></i>
+            </button>
+          </div>
+        </div>
+        <a id="close-video">
+          <i class="fa-solid fa-xmark"></i>
+        </a>
+      </div>
+    </div>
+    <div class="coutdown" onmouseover="showContent()"
+    onmouseout="hiddenContent()">
+      <div class="box">
+        <p id="countdown-time"></p>
+        <p class="coutdown-content">
+          FPT tiếp tục theo đuổi mục tiêu lớn dài hạn là trở thành doanh nghiệp số và đứng trong Top 50 công ty hàng đầu thế giới về cung cấp dịch vụ, giải pháp chuyển đổi số toàn diện vào năm 2030.
+        </p>
+
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

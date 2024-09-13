@@ -1,0 +1,33 @@
+:root {
+  --main-color: #fc7321;
+  --color-dark-bg: #151421;
+  --color-dark-bg-grey: #100f19;
+  --color-dark-title-big: #fff;
+  --color-dark-title-small: #7e7d7d;
+  --color-dark-text: white;
+  --opa--text: 0.7;
+  --color-title: #fff;
+  --color-textcontent: #dbd7d7;
+  --overlay: rgba(29, 42, 55, 0.8);
+  --logo-title: #fff;
+  --color-btn: rgba(19, 17, 63, 0.624);
+  --border: 1px solid rgba(255, 255, 255, 0.15);
+  --border-footer: 1px solid rgba(255, 255, 255, 0.15);
+}
+.theme-light {
+  --main-color: #fc7321;
+  --color-dark-bg: #fff;
+  --color-dark-bg-grey: #e2e2e262;
+  --color-dark-title-big: #fff;
+  --color-dark-title-small: #7e7d7d;
+  --color-dark-text: white;
+  --opa--text: 0.7;
+  --color-title: #3f3a64;
+  --color-textcontent: #666;
+  --icon-light: #fff;
+  --overlay: rgba(44, 63, 82, 0.8);
+  --logo-title: #3f3a64;
+  --color-btn: rgba(183, 181, 218, 0.624);
+  --border: 1px solid rgba(48, 35, 35, 0.521);
+  --border-footer: 1px solid rgba(66, 20, 20, 0.15);
+}

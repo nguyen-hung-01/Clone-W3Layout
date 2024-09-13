@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.title-big {
+  font-size: 50px;
+  color: var(--color-title);
+  font-weight: 500;
+}
+.text-content {
+  font-size: 18px;
+  color: var(--color-textcontent);
+}
+.btn {
+  padding: 15px 20px;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+.btn:hover {
+  opacity: 0.8;
+}
